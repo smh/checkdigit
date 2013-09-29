@@ -1,7 +1,7 @@
 checkdigit
 ==========
 
-Module to calculate and validate check digits for redundancy checking, using f.ex. mod11 or mod10. Initial version only does mod11.
+Module to calculate and validate check digits for redundancy checking, using f.ex. mod10 (luhn algorithm) or mod11.
 
 [![Build Status](https://travis-ci.org/smh/checkdigit.png?branch=master)](https://travis-ci.org/smh/checkdigit)
 
@@ -15,6 +15,11 @@ Module to calculate and validate check digits for redundancy checking, using f.e
 
 ```javascript
 var checkdigit = require('checkdigit');
+
+checkdigit.mod10.isValid('2345676') // true
+checkdigit.mod10.create('234567')   // '6'
+checkdigit.mod10.apply('234567')    // '2345676'
+
 checkdigit.mod11.isValid('123456785') // true
 checkdigit.mod11.create('12345678')   // '5'
 checkdigit.mod11.apply('12345678')    // '123456785'

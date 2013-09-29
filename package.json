@@ -1,7 +1,7 @@
 {
   "name": "checkdigit",
   "version": "1.0.0",
-  "description": "Module to calculate and validate check digits for redundancy checking, using f.ex. mod11 or mod10. Initial version only does mod11",
+  "description": "Module to calculate and validate check digits for redundancy checking, using f.ex. mod10 (luhn algorithm) or mod11.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test"
