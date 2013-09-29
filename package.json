@@ -1,0 +1,29 @@
+{
+  "name": "checkdigit",
+  "version": "1.0.0",
+  "description": "Module to calculate and validate check digits for redundancy checking, using f.ex. mod11 or mod10. Initial version only does mod11",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/smh/checkdigit.git"
+  },
+  "keywords": [
+    "check-digit",
+    "mod11",
+    "mod10",
+    "modulus",
+    "luhn"
+  ],
+  "author": "Stein Martin Hustad <stein@hustad.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/smh/checkdigit/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "should": "~1.3.0"
+  }
+}
