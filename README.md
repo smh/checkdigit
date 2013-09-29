@@ -17,6 +17,7 @@ Module to calculate and validate check digits for redundancy checking, using f.e
 var checkdigit = require('checkdigit');
 checkdigit.mod11.isValid('123456785') // true
 checkdigit.mod11.create('12345678')   // '5'
+checkdigit.mod11.apply('12345678')    // '123456785'
 ```
 
 ## Contributing

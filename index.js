@@ -1,11 +1,16 @@
 module.exports.mod11 = {
   isValid: isValid,
-  create: create
+  create: create,
+  apply: apply
 };
 
 function isValid(input) {
   var length = input.length;
   return input.substr(length-1) === create(input.substr(0, length-1));
+}
+
+function apply(input) {
+  return input + create(input);
 }
 
 function create(input) {

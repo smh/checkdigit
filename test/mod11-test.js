@@ -13,6 +13,17 @@ describe('mod11', function() {
       });
     });
   });
+  describe('apply', function() {
+    [ { input: '1234567890', expected: '12345678903' }
+    , { input: '12345678', expected: '123456785' }
+    , { input: '12444148', expected: '12444148-' }
+    , { input: '1234567897', expected: '12345678970' }
+    ].forEach(function(testcase) {
+      it('should return \'' + testcase.expected + '\' for input \'' + testcase.input + '\'', function() {
+        checkdigit.mod11.apply(testcase.input).should.eql(testcase.expected);
+      });
+    });
+  });
   describe('validate', function() {
     [ '12345678903'
     , '123456785'
