@@ -3,6 +3,9 @@ checkdigit
 
 Module to calculate and validate check digits for redundancy checking, using f.ex. mod11 or mod10. Initial version only does mod11.
 
+
+[![Build Status](https://travis-ci.org/smh/checkdigit.png?branch=master)](https://travis-ci.org/smh/checkdigit)
+
 ## Installation
 
     npm install checkdigit
