@@ -1,6 +1,6 @@
 {
   "name": "checkdigit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Module to calculate and validate check digits for redundancy checking, using f.ex. mod10 (luhn algorithm) or mod11.",
   "main": "index.js",
   "scripts": {
