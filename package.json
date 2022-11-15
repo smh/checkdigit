@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "Module to calculate and validate check digits for redundancy checking, using f.ex. mod10 (luhn algorithm) or mod11.",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "./node_modules/.bin/mocha test"
   },
